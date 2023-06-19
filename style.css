@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(/124778529-cryptocurrency-around-the-world-seamless-background-crypto-currency-symbol.webp);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+h1 {
+  padding-bottom: 30px;
+  color: #fff;
+}
+#quiz {
+  background-color: #4d95cd;
+  width: 700px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 15px 5px #000000;
+  border: none;
+  border-radius: 10px;
+}
+
+#question {
+  text-align: center;
+  width: 60%;
+  background-color: #f9e5b5;
+  margin: 30px 0 30px 0;
+  padding: 10px;
+  box-shadow: 5px 5px 10px 5px #454545;
+  border-radius: 10px;
+}
+
+#options {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  width: 100%;
+
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 30px;
+  box-shadow: 5px 5px 10px 5px #454545;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+li:hover {
+  background-color: #cdf3f3;
+  cursor: pointer;
+}
+.selectedOption {
+  background-color: rgb(64, 172, 215) !important;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.correct {
+  background-color: rgb(42, 183, 68);
+}
+
+.incorrect {
+  background-color: rgb(208, 46, 46);
+}
+
+#btn-container {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 30px 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f9e5b5;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #f2c967;
+}
